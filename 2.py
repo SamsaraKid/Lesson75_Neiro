@@ -61,7 +61,7 @@ def minus(mas): # нейронка не угадала цифру и умень�
 
 
 # тренировка сети
-n = 1000
+n = 10000
 for i in range(n):
     rnd = random.randint(0, 9)
     res = opredelenie(nums[rnd])
@@ -97,3 +97,32 @@ print("6 это 5? ", opredelenie(num6))
 print("7 это 5? ", opredelenie(num7))
 print("8 это 5? ", opredelenie(num8))
 print("9 это 5? ", opredelenie(num9))
+
+
+# второе тестирование, кривые 5-ки
+
+num50 = list('111'
+             '100'
+             '010'
+             '001'
+             '111')
+num51 = list('010'
+             '100'
+             '111'
+             '001'
+             '011')
+num52 = list('011'
+             '100'
+             '110'
+             '001'
+             '110')
+num53 = list('010'
+             '100'
+             '111'
+             '001'
+             '010')
+
+print("50 это 5? ", opredelenie(num50))
+print("51 это 5? ", opredelenie(num51))
+print("52 это 5? ", opredelenie(num52))
+print("53 это 5? ", opredelenie(num53))
