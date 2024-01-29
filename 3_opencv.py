@@ -43,4 +43,4 @@ for i in range(0, 360, 10):
     img_rot = cv2.warpAffine(img, matrix_rot, dsize=(width, height))
     cv2.imshow('Image', img_rot)
     cv2.waitKey(500)
-    cv2.destroyAllWindows()
+    # cv2.destroyAllWindows()
